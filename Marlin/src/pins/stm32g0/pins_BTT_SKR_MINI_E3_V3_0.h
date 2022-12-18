@@ -94,6 +94,10 @@
 #define Z_STEP_PIN                          PB0
 #define Z_DIR_PIN                           PC5
 
+#define Z2_ENABLE_PIN                       PD0 // Added by eldeeb
+#define Z2_STEP_PIN                         PD2
+#define Z2_DIR_PIN                          PD3
+
 #define E0_ENABLE_PIN                       PD1
 #define E0_STEP_PIN                         PB3
 #define E0_DIR_PIN                          PB4
@@ -107,6 +111,7 @@
   #define Y_HARDWARE_SERIAL  MSerial4
   #define Z_HARDWARE_SERIAL  MSerial4
   #define E0_HARDWARE_SERIAL MSerial4
+  #define Z2_HARDWARE_SERIAL MSerial2  // Added by eldeeb to define the Tx2 as UART for TMC2208 "The 5th Stepper"  
 
   // Default TMC slave addresses
   #ifndef X_SLAVE_ADDRESS
