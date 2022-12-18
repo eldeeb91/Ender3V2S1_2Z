@@ -1,3 +1,13 @@
+# Changes from main repo
+Targeting BTT SKR MINI E3 V3
+- Add 5th Stepper as Z2 using TMC2208 using PD0, PD2 and PD3 as EN, STEP and DIR and UART2.
+- Enable G34
+- Enable TMC_DEBUG.
+- Change E_Steps to 139.
+- Change physical limits to match my machine [X_MAX_POS 238, Y_MAX_POS 238, Z_MAX_POS 270]
+- Change the runout sensor to 330.
+- Change Z Current to 580
+
 # Professional Firmware for the Creality Ender 3 V2/S1 Printers
 
 ![GitHub contributors](https://img.shields.io/github/contributors/mriscoc/Ender3V2S1.svg)
